@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #fff;
+  background-image: url("deadpool1.jpeg"); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire body */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+}
+
+.logo {
+  position: absolute;
+  top: -10px;
+  align-items: center;
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  left:40px;
+  cursor:pointer;
+}
+
+.countdown-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+  padding: 20px 40px; 
+  border-radius: 8px;
+}
+
+#countdown {
+  display: flex;
+  gap: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+
+#countdown div {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 100px;
+  text-align: center;
+}
+
+#red{
+  color:rgba(94,18,31,255);
+  font-size: 100px;
+}
+
+/* Tablet: 768px and below */
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 280px;
+    margin-top: -20px;
+    width:160px;
+  }
+
+  body{
+    padding: 190px 50px 50px 50px;
+    margin-top: 10px;
+    background-position:bottom 10% right 20%;
+  }
+
+  #red{
+    font-size: 60px;
+  }
+
+  .countdown-container {
+    height: 70vh;
+    padding:40px 40px 40px 40px;
+    background-position: top 70% right 90%;
+  }
+
+  #countdown {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.8rem; /* Slightly smaller font size for tablets */
+  }
+
+  #countdown div {
+    padding-left: 40px;
+    min-width: 70px;
+  }
+}
+
+/* Mobile: 600px and below */
+@media (max-width: 600px) {
+  .logo {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 95px;
+    margin-top: -20px;
+    width: 130px;
+  }
+
+  body{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0px;
+    background-position: top 0% right 10%;
+    font-size: 15px;
+    margin-top: 73px;
+  }
+
+  #red{
+    font-size: 55px;
+  }
+
+  .countdown-container {
+    padding: 10px;
+    margin-top: -80px;
+  }
+
+  #countdown {
+    gap: 10px;
+    font-size: 1.5rem;
+    margin-top: -40px; /* Smaller font size for mobile */
+  }
+
+  #countdown div {
+    padding: 30px;
+    min-width: 80px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+

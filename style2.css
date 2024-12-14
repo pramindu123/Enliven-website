@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #fff;
+  background-image: url("deadpool1.jpeg"); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire body */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+}
+
+.logo {
+  position: absolute;
+  top: -30px;
+  align-items: center;
+  width: 130px; /* Adjust size as needed */
+  height: auto;
+  margin-left: 380px;
+  cursor:pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(31, 29, 29, 0.6); /* Semi-transparent background for readability */
+  padding: 30px 50px;
+  border-radius: 8px;
+  font-size: 2rem; /* Larger font size */
+}
+
+#red {
+  color: rgba(94,18,31,255);
+  font-size: 120px; /* Larger font size */
+}
+
+#indexInput{
+    width:250px;
+    min-height: 4vh;
+    font-size: larger;
+    text-align: center;
+    align-items: center;
+    font-family: "Audiowide", sans-serif;
+  }
+
+  #submitButton{
+    align-items: center;
+    text-align: center;
+    width:180px;
+    min-height: 6vh;
+    background-color: rgba(94,18,31,255);
+    color:#fff;
+    font-size: large;
+    font-family:"Audiowide", sans-serif
+  }
+
+  h1{
+    font-size: 50px;
+  }
+
+
+
+
+/* Tablet: 768px and below */
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 280px;
+    margin-top: -10px;
+    width: 130px;
+  }
+
+  h1{
+    font-size: 35px;
+  }
+
+  body {
+    padding: 20px;
+    margin-top: 50px;
+    background-position: bottom -10% right 20%; /* Keeps background centered */
+  }
+
+  .container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.4rem; /* Bigger font for tablets */
+    padding: 80px;
+    height: 80vh;
+
+  }
+
+  #red {
+    font-size: 80px;
+  }
+  #indexInput{
+    width:250px;
+    min-height: 6vh;
+    font-size: larger;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+  }
+
+  #submitButton{
+    width:160px;
+    min-height: 5vh;
+    color:#fff;
+    font-size: large;
+    font-family:"Audiowide", sans-serif
+  }
+
+} /* Closing brace for tablet query */
+
+/* Mobile: 600px and below */
+@media (max-width: 600px) {
+  .logo {
+    margin-left: 140px;
+    margin-top: -10px;
+    width: 130px;
+  }
+
+  h1{
+    font-size: 27px;
+  }
+
+  body {
+    font-size: medium;
+    padding: 20px;
+    margin-top: 10px;
+    background-position: bottom -10% right 20%; /* Keeps background centered */
+  }
+
+  .container {
+    font-size: 2.5rem; /* Bigger font for tablets */
+    padding: 10px 20px 20px 20px;
+    height: 68vh;
+  }
+
+  #red {
+    font-size: 55px;
+  }
+
+  #mn{
+    font-size: 27px;
+    font-weight: 600;
+  }
+  #indexInput{
+    width:190px;
+    min-height: 6vh;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+  }
+
+  #submitButton{
+    width:160px;
+    min-height: 5vh;
+    color:#fff;
+    font-size: large;
+    font-family:"Audiowide", sans-serif
+  }
+
+  #yourTeam{
+    font-size: 30px;
+  }
+
+  #result{
+    font-size: 30px;
+  }
+}
